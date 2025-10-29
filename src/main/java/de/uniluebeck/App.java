@@ -1,6 +1,6 @@
-package com.example.kis;
+package de.uniluebeck.kis;
 
-import com.example.kis.db.Db;
+import de.uniluebeck.kis.db.Db;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -43,7 +43,7 @@ public class App extends Application {
   public void stop() {
     log.info("Stopping KIS application.");
     // Gracefully shutdown connection pool
-    com.example.kis.db.Db.shutdown();
+    de.uniluebeck.kis.db.Db.shutdown();
   }
 
   public static void main(String[] args) {

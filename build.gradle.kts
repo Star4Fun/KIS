@@ -22,7 +22,7 @@ java {
 
 application {
     // Default entry point (can be changed)
-    mainClass.set("com.example.kis.App")
+    mainClass.set("de.uniluebeck.kis.App")
 }
 
 tasks.test {

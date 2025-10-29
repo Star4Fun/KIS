@@ -1,4 +1,4 @@
-package com.example.kis.db;
+package de.uniluebeck.kis.db;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
