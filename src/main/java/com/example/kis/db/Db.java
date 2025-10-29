@@ -28,9 +28,9 @@ public final class Db {
     final String url =
         getenvOr(
             "KIS_DB_URL",
-            "jdbc:mariadb://localhost:3306/kis?useUnicode=true&characterEncoding=utf8");
-    final String user = getenvOr("KIS_DB_USER", "kis_user");
-    final String pass = getenvOr("KIS_DB_PASS", "secret");
+            "jdbc:mariadb://dbstudents01.imi.uni-luebeck.de:3306/projeh_wise25_kis01_v01?useUnicode=true&characterEncoding=utf8");
+    final String user = getenvOr("KIS_DB_USER", "projeh_wise25_kis01");
+    final String pass = getenvOr("KIS_DB_PASS", "OLCOqys.Wt9K6vxz");
 
     // 1) Migrate schema with Flyway (before opening the pool)
     log.info("Running Flyway migrations on {}", url);

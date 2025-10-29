@@ -5,6 +5,9 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
     }
+    plugins {
+	id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+    }
 }
 
 dependencyResolutionManagement {
@@ -13,9 +16,9 @@ dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
             // Versions
-            version("java", "21")
+            version("java", "25")
             version("junit", "5.11.3")
-            version("spotless", "6.25.0")
+            version("spotless", "8.0.0")
             version("hapiV2", "2.3")        // HAPI v2 example
             version("hapiFhirBom", "7.6.0") // HAPI FHIR BOM version
 

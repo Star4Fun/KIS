@@ -6,7 +6,7 @@ plugins {
 }
 
 javafx {
-    version = "21" // passt zu JDK 21; bei JDK 23 -> "23"
+    version = "25" // passt zu JDK 21; bei JDK 23 -> "23"
     modules = listOf(
         "javafx.controls",
         "javafx.fxml"      
@@ -94,10 +94,12 @@ dependencies {
     // Migrations (highly recommended)
     implementation("org.flywaydb:flyway-core:10.18.1")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.3")
+    testImplementation("org.junit.jupiter:junit-jupiter")
 
     // Simple runtime logger (pick one binding)
     runtimeOnly("org.slf4j:slf4j-simple:2.0.13")
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     testImplementation(libs.junit.jupiter)
 }
