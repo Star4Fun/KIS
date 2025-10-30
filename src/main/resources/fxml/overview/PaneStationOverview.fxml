@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.overview.StationOverviewController">
+    <TableView fx:id="stationTable" prefHeight="353.0" prefWidth="262.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Station" />
+            <TableColumn prefWidth="165.0" text="Aufnahmedatum" />
+        </columns>
+    </TableView>
+</Pane>

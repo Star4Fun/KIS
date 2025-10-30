@@ -1,0 +1,7 @@
+.notification-bar > .pane {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e6e6e6);
+}
+
+.notification-bar.dark > .pane {
+    -fx-background-color: linear-gradient(to bottom, #3a3a3a, #2b2b2b);
+}

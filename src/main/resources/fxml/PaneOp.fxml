@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="184.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admission.OPController">
+	<children>
+		<GridPane layoutX="20.0" layoutY="13.0" prefHeight="162.0" prefWidth="708.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fall" />
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datum" GridPane.rowIndex="1" />
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="OP-Typ" GridPane.rowIndex="2" />
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="OP-Saal" GridPane.rowIndex="3" />
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chirurg-ID" GridPane.rowIndex="4" />
+				<ComboBox fx:id="opCaseId" prefWidth="150.0" GridPane.columnIndex="1" />
+				<DatePicker fx:id="opDate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<ComboBox fx:id="opType" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<ComboBox fx:id="opRoom" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+				<ComboBox fx:id="opSurgeonId" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+			</children>
+		</GridPane>
+	</children>
+</AnchorPane>

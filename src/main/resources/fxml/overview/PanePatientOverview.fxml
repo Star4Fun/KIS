@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.overview.PatientOverviewController">
+    <CheckBox fx:id="opListFilterPostOp" mnemonicParsing="false" prefHeight="22.0" prefWidth="248.0" text="Zeige entlassene Patienten (KIS)" />
+    <ComboBox fx:id="stations" layoutX="233.0" layoutY="-4.0" prefHeight="12.0" prefWidth="130.0" promptText="Station" />
+    <TableView fx:id="opListPatients" layoutY="25.0" prefHeight="409.0" prefWidth="363.0">
+        <columns>
+            <TableColumn prefWidth="101.0" text="Patient-ID" />
+            <TableColumn prefWidth="69.0" text="Vorname" />
+            <TableColumn prefWidth="98.0" text="Nachname" />
+            <TableColumn prefWidth="96.0" text="Geburtsdatum" />
+        </columns>
+    </TableView>
+</Pane>

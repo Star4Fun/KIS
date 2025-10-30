@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="476.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.overview.OverviewController">
+   <children>
+      <fx:include fx:id="patientOverview" layoutX="20.0" layoutY="20.0" source="overview/PanePatientOverview.fxml" />
+      <fx:include fx:id="caseOverview" layoutX="400.0" layoutY="45.0" source="overview/PaneCaseOPOverview.fxml" />
+      <fx:include fx:id="stationOverview" layoutX="745.0" layoutY="45.0" source="overview/PaneStationOverview.fxml" />
+   </children>
+</AnchorPane>

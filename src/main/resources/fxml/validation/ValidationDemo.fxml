@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import validation.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="validation.ValidationDemoController">
+
+    <children>
+
+        <ValidationWrapper fx:id="valUsername" labelText="Username">
+            <content>
+                <TextField fx:id="inputUsername" />
+            </content>
+        </ValidationWrapper>
+
+        <ValidationWrapper fx:id="valPassword" labelText="Password">
+            <content>
+                <PasswordField fx:id="inputPassword" />
+            </content>
+        </ValidationWrapper>
+
+        <Button fx:id="submitButton" text="Submit" />
+
+    </children>
+
+</VBox>

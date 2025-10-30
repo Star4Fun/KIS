@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="712.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.communication.CommunicationsController">
+	<children>
+      <HBox alignment="CENTER" layoutX="40.0" layoutY="84.0" spacing="10.0">
+         <children>
+      		<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zieladresse" />
+      		<TextField fx:id="communicationsIpAddress" prefHeight="25.0" prefWidth="142.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="486.0" layoutY="84.0" spacing="10.0">
+         <children>
+      		<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Patient / OP" />
+      		<ComboBox fx:id="communicationsObject" prefHeight="25.0" prefWidth="195.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="273.0" layoutY="84.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Port" />
+      		<TextField fx:id="communicationsPort" prefHeight="25.0" prefWidth="75.0" />
+         </children>
+      </HBox>
+      <TableView fx:id="ts" layoutX="26.0" layoutY="128.0" prefHeight="392.0" prefWidth="765.0">
+        <columns>
+          <TableColumn minWidth="0.0" prefWidth="584.0" text="HL7 Message" />
+          <TableColumn minWidth="0.0" prefWidth="112.0" text="Date" />
+          <TableColumn prefWidth="68.0" text="Gültig" />
+        </columns>
+      </TableView>
+      <Button layoutX="40.0" layoutY="40.0" mnemonicParsing="false" onAction="#send" text="Senden" />
+	</children>
+</AnchorPane>
